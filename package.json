@@ -1,11 +1,16 @@
 {
-  "name": "chai-backend",
+  "name": "TruckerBackend",
   "version": "1.0.0",
+  "description":"Backend for Truck website",
+  "type": "module",
   "main": "index.js",
+  "types": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "author": "chandan",
   "license": "ISC",
-  "description": ""
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
