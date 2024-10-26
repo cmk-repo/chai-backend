@@ -1,7 +1,7 @@
 {
-  "name": "TruckerBackend",
+  "name": "chai-backend",
   "version": "1.0.0",
-  "description":"Backend for Truck website",
+  "description": "Backend for Truck website",
   "type": "module",
   "main": "index.js",
   "types": "module",
@@ -11,6 +11,7 @@
   "author": "chandan",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3"
   }
 }
