@@ -6,7 +6,7 @@ import { app } from "./app.js";
 
 
 dotenv.config({
-	path: './env'
+	path: './.env'
 }) // to use this way we are adding experimental feature to package.json
 
 

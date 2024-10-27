@@ -7,10 +7,9 @@
 
 // promise type
 const asyncHandler = (requestHandler) => {
-	return (res, req, next) => {
+	return (req, res, next) => {
 		Promise.resolve(requestHandler(req, res, next)).catch((err) => next(err))
 	}
-
 }
 
 // // try catch type
