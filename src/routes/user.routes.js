@@ -42,12 +42,12 @@ router.route("/update-account").patch(verifyJWT, updateAccountDetails);
 
 router
     .route("/avatar")
-    .patch(verifyJWT, upload.single("avatar"), updateUserAvatar);
+    .patch(verifyJWT, upload.single("avatar"), updateUserAvatar); // middleware to upload
 router
     .route("/cover-image")
     .patch(verifyJWT, upload.single("coverImage"), updateUserCoverImage);
 
-router.route("/c/:username").get(verifyJWT, getUserChannelProfile);
+router.route("/c/:username").get(verifyJWT, getUserChannelProfile); // sending params using :
 router.route("/history").get(verifyJWT, getWatchHistory);
 
 export default router;
